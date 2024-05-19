@@ -1,0 +1,16 @@
+#caixa{
+    color: aqua;
+    border: 1px solid red;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background-color: rgb(200, 176, 223);
+    
+    
+    
+}
+
+#login, #password {
+    height: 15px;
+}
