@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com validação</title>
+</head>
+
+<style>
+   label {
+        display: block;
+        padding: auto;
+        margin: auto;
+        
+    }
+
+    div {
+    width: 210px; /* Defina a largura desejada */
+    height: 300px; /* Defina a altura desejada */
+    background-color: #ccc; /* Cor de fundo para visualização */
+    margin: 0 auto; /* Define as margens automáticas para centralizar horizontalmente */
+}
+    
+</style>
+
+<body>
+    <h1>Form com validação</h1>
+    <div>
+    <form id="form">
+        <label for="name">Nome</label>
+        <input type="text" id="name">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <label for="password">Senha</label>
+        <input type="password" id="password">
+
+        <label for="job" id="job">Situação de trabalho:</label>
+            <option value="">Está buscando trabalho?</option>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message"></textarea>
+        
+        <button type="submit">Enviar</button>
+    </div>
+    </form>
+
+</body>
+
+
+
+<script>
+
+
+</script>
+
+
+
+</html>
