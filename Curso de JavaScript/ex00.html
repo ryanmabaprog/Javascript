@@ -9,74 +9,27 @@
     
 </body>
 <script>
-   class Animal { //classe pai
-        constructor() {
-          this.cor = ''
-          this.tamanho = null
-          this.peso = null
-        }
 
-        dormir() {
-          console.log('Dormir')
-        }
-      }
-      
-      class Cachorro extends Animal { //classes filhos, herdando atributos e metodos
-        constructor(){
-          super()
-          this.orelhas = 'Grandes e caídas'
-        }
-
-        correr() {
-          console.log('Correr')
-        }
-
-        rosnar() {
-          console.log('Rosnar')
-        }
-      }
-
-      class Passaro extends Animal {
-        constructor() {
-          super()
-          this.bico = 'Curto'
-        }
-
-        voar() {
-          console.log('Voar')
-        }
-
-      }
-
-      class Papagaio extends Passaro {
-        constructor() {
-          super()
-          this.sabeFalar = true
-        }
-
-        falar() {
-          console.log('Falar')
-        }
-      }
-
-      let cachorro = new Cachorro()
-      let passaro = new Passaro()
-      let papagaio = new Papagaio()
-
-      /*
-      cachorro.dormir()
-      passaro.dormir()
-      papagaio.falar()
-      papagaio.dormir()
-      papagaio.voar()
-      */
-
-      console.log(cachorro)
-      console.log(passaro)
-      console.log(papagaio)
-
-    
-
+let Bike = function(cor, marcha, aro){
+    return {
+      cor: cor,
+      marcha: marcha,
+      aro: aro,
+      pedalar(){console.log('Metodo pedalar executado')}
+    }
+}
+  
+let Bicicleta1 = Bike('amarela', 12, 29)
+let Bicicleta2 = Bike('azul', 12, 29)
+let Bicicleta3 = Bike('vermelha', 12, 29)
+let Bicicleta4 = Bike('preta', 12, 29)
+let Bicicleta5 = Bike('branca', 12, 29)
+console.log(Bicicleta1)
+console.log(Bicicleta2)
+console.log(Bicicleta3)
+console.log(Bicicleta4)
+console.log(Bicicleta5)
+   
 
 </script>
 </html>
